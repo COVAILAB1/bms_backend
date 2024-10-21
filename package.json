@@ -2,15 +2,15 @@
     "name": "bms-dashboard",
     "version": "1.0.0",
     "description": "Node.js app for retrieving BMS data from MongoDB",
-    "main": "main.js",  
+    "main": "main.js",
     "type": "module",
     "scripts": {
-      "start": "node main.js"  
+        "start": "node main.js"
     },
     "dependencies": {
-      "cors": "^2.8.5",
-      "express": "^4.17.1",
-      "mongoose": "^5.11.15"
+        "axios": "^1.7.7",
+        "cors": "^2.8.5",
+        "express": "^4.17.1",
+        "mongoose": "^5.11.15"
     }
-  }
-  
+}

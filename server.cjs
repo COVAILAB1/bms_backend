@@ -68,7 +68,7 @@
   const BMS = mongoose.model('BMS', bmsSchema);
   
   // API route to get recent BMS data
-  app.get('/api/recent-bms', async (req, res) => {
+  app.get('/data', async (req, res) => {
       try {
           const recentBMSData = await BMS.find().sort({ receivedAt: -1 }).limit(1);
           res.json(recentBMSData);

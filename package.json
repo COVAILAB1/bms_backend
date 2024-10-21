@@ -3,6 +3,7 @@
     "version": "1.0.0",
     "description": "Node.js app for retrieving BMS data from MongoDB",
     "main": "main.js",  
+    "type": "module",
     "scripts": {
       "start": "node main.js"  
     },

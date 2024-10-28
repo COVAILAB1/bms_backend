@@ -1,8 +1,12 @@
 const express = require("express");
+const cors = require("cors"); // Import CORS middleware
 const { MongoClient } = require("mongodb");
 
 const app = express();
 const port = process.env.PORT || 3000;
+
+// Enable CORS for all routes
+app.use(cors());
 
 // MongoDB connection string
 const uri = "mongodb+srv://covailabs1:KRISHtec%405747@bmsdashboard.upate.mongodb.net/?retryWrites=true&w=majority&appName=bmsdashboard";
@@ -55,7 +59,9 @@ async function getRecentData() {
   } catch (error) {
     console.error("Error retrieving data from MongoDB Atlas:", error);
     throw error;
-  } 
+  } finally {
+    await client.close();
+  }
 }
 
 // API endpoint to get recent BMS data

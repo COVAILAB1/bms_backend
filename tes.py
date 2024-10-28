@@ -10,7 +10,7 @@ escaped_username = urllib.parse.quote_plus(username)
 escaped_password = urllib.parse.quote_plus(password)
 
 # MongoDB URI with escaped credentials
-uri = f"mongodb+srv://{escaped_username}:{escaped_password}@cluster0.mongodb.net/?retryWrites=true&w=majority"
+uri = "mongodb+srv://covailabs1:KRISHtec%405747@bmsdashboard.upate.mongodb.net/?retryWrites=true&w=majority&appName=bmsdashboard"
 
 
 # Create a new client and connect to the server

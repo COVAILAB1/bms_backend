@@ -55,10 +55,7 @@ async function getRecentData() {
   } catch (error) {
     console.error("Error retrieving data from MongoDB Atlas:", error);
     throw error;
-  } finally {
-    await client.close();
-    console.log("Disconnected from MongoDB Atlas");
-  }
+  } 
 }
 
 // API endpoint to get recent BMS data
